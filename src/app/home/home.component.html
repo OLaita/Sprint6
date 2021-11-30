@@ -1,0 +1,11 @@
+<div *ngIf="haribo; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+    <h1>Bienvenid@</h1>
+    <h3>En aquest lliurament posarem en pràctica els conceptes bàsics que has après de Angular. Un client que té com a producte principal una web de gestió empesarial desenvolupada amb Angular, ens ha demanat que desenvolupem un tutorial, en la qual mitjançant dos botons els nous usuaris puguin avançar i retrocedir en els consells, modificant-se el text d'ajuda i la imatge de fons.</h3>
+    <button (click)="cambiarEscena()">Pasar</button>
+</ng-template>
+
+
+<ng-template #elseBlock>
+  <app-escena></app-escena>
+</ng-template>

@@ -1,0 +1,13 @@
+<div id="boto">
+    <button (click)="prev()" [ngClass]="'bts'">Anterior</button>
+    <button (click)="next()" [ngClass]="'bts'">Siguiente</button>
+</div>
+
+<ul>
+
+    <li *ngFor="let item of frases;let i = index" [ngClass]="{'active' : item.active}">
+        {{item.frase}}
+        <img [ngClass]="{'activeImg' : item.active, 'inactiveImg':!item.active}" src="./assets/{{item.img}}">
+    </li>
+
+</ul>

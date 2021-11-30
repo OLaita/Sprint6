@@ -1,0 +1,45 @@
+#boto{
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.bts{
+    width: 50vw;
+    height: 5rem;
+    font-size: 50px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 3rem;
+    width: 90vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.active{
+    background-color: #ff8080;
+}
+
+.inactiveImg{
+    display: none;
+}
+
+.activeImg{
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+}
